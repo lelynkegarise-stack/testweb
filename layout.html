@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  {% seo %}
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1><a href="/">{{ site.title }}</a></h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about/">About Us</a>
+        <a href="/rentals/">Hall Rentals</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>{{ site.title }} &bull; {{ site.address }}</p>
+      <p>Meetings: {{ site.meeting_schedule }}</p>
+      <p>&copy; {{ 'now' | date: "%Y" }} Downsville Ruritan Club. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
