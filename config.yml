@@ -1,0 +1,17 @@
+# Site Settings
+title: "Downsville Ruritan Club"
+email: "info@downsvilleruritan.com"
+phone: "(301) 555-0199"
+description: "Serving the Downsville, MD community through fellowship, goodwill, and community service."
+baseurl: "" 
+url: "https://downsvilleruritan.com"
+
+# Club Details
+meeting_schedule: "2nd Tuesday of every month at 7:00 PM"
+address: "Downsville Ruritan Community Center, Downsville, MD 21733"
+
+# Build Settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
