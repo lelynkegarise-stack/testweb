@@ -1,17 +1,21 @@
-# Site Settings
 title: "Downsville Ruritan Club"
-email: "info@downsvilleruritan.com"
+description: "Serving the Downsville, MD community through fellowship and goodwill."
+url: "https://lelynkegarise-stack.github.io"
+baseurl: "" # Keep empty if deploying to root domain or custom domain
+
+# Global Club Information
 phone: "(301) 555-0199"
-description: "Serving the Downsville, MD community through fellowship, goodwill, and community service."
-baseurl: "" 
-url: "https://lelynkegarise-stack.github.io/testweb/"
-
-# Club Details
-meeting_schedule: "2nd Tuesday of every month at 7:00 PM"
+email: "info@downsvilleruritan.com"
 address: "Downsville Ruritan Community Center, Downsville, MD 21733"
+meeting_info: "2nd Tuesday of every month at 7:00 PM"
 
-# Build Settings
-markdown: kramdown
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+# Navigation Menu Options
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "About Us"
+    url: "/about/"
+  - title: "Hall Rentals"
+    url: "/rentals/"
+  - title: "Contact"
+    url: "/contact/"
