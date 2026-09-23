@@ -1,21 +1,4 @@
-title: "Downsville Ruritan Club"
-description: "Serving the Downsville, MD community through fellowship and goodwill."
-url: "https://lelynkegarise-stack.github.io"
-baseurl: "" # Keep empty if deploying to root domain or custom domain
-
-# Global Club Information
-phone: "(301) 555-0199"
-email: "info@downsvilleruritan.com"
-address: "Downsville Ruritan Community Center, Downsville, MD 21733"
-meeting_info: "2nd Tuesday of every month at 7:00 PM"
-
-# Navigation Menu Options
-navigation:
-  - title: "Home"
-    url: "/"
-  - title: "About Us"
-    url: "/about/"
-  - title: "Hall Rentals"
-    url: "/rentals/"
-  - title: "Contact"
-    url: "/contact/"
+title: Downsville Ruritan Club
+description: Serving Downsville, Maryland and the surrounding area since 1954.
+url: "" # e.g. https://yourdomain.com
+baseurl: "" # Add your repo name here if hosting on GitHub Pages subfolder (e.g., "/repository-name")
