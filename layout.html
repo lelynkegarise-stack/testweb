@@ -1,37 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
-  {% seo %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <link rel="stylesheet" href="{{ '/style.css?v=1.0' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/logo1.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/logo1.png' | relative_url }}">
+  
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 </head>
+
 <body>
 
-  <header class="site-header">
-    <div class="container">
-      <h1><a href="/">{{ site.title }}</a></h1>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/about/">About Us</a>
-        <a href="/rentals/">Hall Rentals</a>
-        <a href="/contact/">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <!-- Navbar Include -->
+  {% include navbar.html %}
 
-  <main class="container content">
-    {{ content }}
-  </main>
+  <!-- Page Content -->
+  {{ content }}
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>{{ site.title }} &bull; {{ site.address }}</p>
-      <p>Meetings: {{ site.meeting_schedule }}</p>
-      <p>&copy; {{ 'now' | date: "%Y" }} Downsville Ruritan Club. All rights reserved.</p>
-    </div>
-  </footer>
+  <!-- Footer Include -->
+  {% include footer.html %}
 
+  <script src="{{ '/style.js' | relative_url }}"></script>
 </body>
-</html>
+</html></html>
