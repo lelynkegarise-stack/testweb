@@ -1,14 +1,4 @@
-<header style="background-color: #003366; padding: 1rem 2rem; color: white;">
-  <div style="max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
-    <h2 style="margin: 0; font-size: 1.5rem;">
-      <a href="{{ '/' | relative_url }}" style="color: white; text-decoration: none;">{{ site.title }}</a>
-    </h2>
-    <nav>
-      {% for item in site.navigation %}
-        <a href="{{ item.url | relative_url }}" style="color: white; margin-left: 1.5rem; text-decoration: none; font-weight: bold;">
-          {{ item.title }}
-        </a>
-      {% endfor %}
-    </nav>
-  </div>
-</header>
+<nav class="navbar">
+  <a href="{{ '/' | relative_url }}">Home</a>
+  <!-- Add your navbar links here -->
+</nav>
